@@ -17,12 +17,12 @@
 # simple interest = p*t*r/100
 
 echo "Enter the principal:"
-read p
+read -r p
 echo "Enter time period in years:"
-read t
+read -r t
 echo "Enter rate of interest per year:"
-read r
+read -r r
 
 s=$(echo "scale=2; $p * $t * $r / 100" | bc)
 echo "The simple interest is: "
-echo $s
+echo "$s"
